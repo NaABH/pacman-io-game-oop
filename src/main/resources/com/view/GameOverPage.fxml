@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="root" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/gameOverPage.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.GameOverPageController">
+   <children>
+      <HBox layoutX="130.0" layoutY="324.0" prefHeight="35.0" prefWidth="374.0" spacing="15.0" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="110.0">
+         <children>
+            <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleStartNewGame" prefHeight="35.0" prefWidth="95.0" styleClass="btn" text="New Game">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handlePlayerRecord" prefHeight="35.0" prefWidth="152.0" styleClass="btn" text="Player Record">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleBackToHomePage" prefHeight="35.0" prefWidth="100.0" styleClass="btn" text="HomePage">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <VBox layoutX="94.0" layoutY="73.0" prefHeight="93.0" prefWidth="231.0" spacing="10.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+         <children>
+            <HBox prefHeight="30.0" prefWidth="173.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="220.0" styleClass="data" text="Score:">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="scoreLabel" alignment="CENTER" prefHeight="30.0" prefWidth="100.0" styleClass="data" text="0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="173.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="220.0" styleClass="data" text="Highest Score:">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="highestScoreLabel" alignment="CENTER" prefHeight="30.0" prefWidth="100.0" styleClass="data" text="0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="173.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="220.0" styleClass="data" text="Pellets Eaten:">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pelletLabel" alignment="CENTER" prefHeight="30.0" prefWidth="100.0" styleClass="data" text="0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="173.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="220.0" styleClass="data" text="Scared Ghosts Eaten:">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="scaredGhostLabel" alignment="CENTER" prefHeight="30.0" prefWidth="100.0" styleClass="data" text="0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="251.0" layoutY="107.0" styleClass="gameover" text="GAME OVER" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

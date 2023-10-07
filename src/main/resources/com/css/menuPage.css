@@ -1,0 +1,14 @@
+#menuPage {
+  -fx-background-image: url("../images/original.gif");
+}
+
+.btn {
+  -fx-background-color: rgb(223, 223, 26);
+  -fx-font-family: "Courier New";
+  -fx-font-size: 18px;
+  -fx-font-weight: bold;
+}
+
+.btn:hover {
+  -fx-background-color: red;
+}

@@ -1,0 +1,17 @@
+#root {
+  -fx-font-family: "Courier New";
+  -fx-background-image: url("../images/original.gif");
+}
+
+.score {
+  -fx-text-fill: yellow;
+  -fx-font-size: 26px;
+  -fx-font-weight: bold;
+}
+
+.pause {
+  -fx-text-fill: yellow;
+  -fx-font-size: 50px;
+  -fx-font-weight: bold;
+}
+

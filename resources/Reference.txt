@@ -1,0 +1,3 @@
+All the images used are retrieved from online resources 
+but with self-modification to crop them into the correct 
+shape and also make its background transparent.
